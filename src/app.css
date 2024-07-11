@@ -1,0 +1,123 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-size: 2vw;
+}
+
+header{
+    font-size: 1.1em;
+    background-image: linear-gradient(to right, rgb(18, 110, 209), rgb(73, 161, 255));
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid rgb(83, 83, 83);
+}
+
+main{
+    padding: 30px 8vw;
+    position: relative;
+}
+
+main h2{
+    text-align: center;
+}
+
+ul{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+li{
+    width: calc(25% - 2vw);
+    padding: 1vw;
+    border-radius: 5px;
+    border: 2px solid rgb(40, 124, 213);
+    background-color: rgb(255, 255, 255);
+    color: rgb(82, 78, 78);
+}
+
+li h3{
+    border-bottom: 2px solid gray;
+    padding: 10px 0;
+    word-wrap: break-word;
+}
+
+li p{
+    padding: 10px 0;
+    word-wrap: break-word;
+}
+
+button{
+    color: white;
+    background-color: rgb(73, 161, 255);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.521);
+    font-weight: bolder;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+button:hover{
+    background-color: rgb(47, 131, 221);
+}
+
+.space_between_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.546);
+    z-index: 1;
+}
+
+#taskInfoScreen{
+    z-index: 2;
+    padding: 2vw;
+    border: 2px solid rgb(40, 124, 213);
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+input, textarea{
+    margin: 10px 0;
+    border: 2px solid rgb(40, 124, 213);
+    font-size: 0.9em;
+    text-indent: 0.5em;
+    width: 100%;
+}
+
+textarea{
+    height: 10vw;
+    padding: 1vw 0;
+}
+
+#taskInfoScreen button{
+    width: 100%;
+}
